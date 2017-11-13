@@ -4,4 +4,8 @@
 
 words = input('Enter darn words BOI: ').split(' ')
 
-print(max(words))
+l = 0
+for w in words:
+    if l < len(w):
+        l = len(w)
+print(l)
