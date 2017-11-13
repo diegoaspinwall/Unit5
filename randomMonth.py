@@ -5,4 +5,4 @@
 from random import randint
 
 months = [1,2,3,4,5,6,7,8,9,10,11,12]
-print(months[randint(1,12)])
+print(months[randint(0,11)])
