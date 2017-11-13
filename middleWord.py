@@ -4,4 +4,4 @@
 
 words = input('Enter words: ').split(' ')
 
-print(words(len(words)/2))
+print(words[len(words)/2])
