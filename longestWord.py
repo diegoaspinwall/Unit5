@@ -4,4 +4,4 @@
 
 words = input('Enter darn words BOI: ').split(' ')
 
-
+print(max(words))
