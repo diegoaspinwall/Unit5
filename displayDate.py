@@ -4,7 +4,7 @@
 
 from datetime import *
 
-today = datetime.date.today.day()
+today = datetime.date.today()
 day = today.day()
 month = today.month()
 year = today.year()
