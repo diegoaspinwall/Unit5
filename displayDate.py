@@ -9,4 +9,7 @@ month = date.today().month
 year = date.today().year
 weekday = date.today().weekday()
 
-print(day)
+monthlist = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+weekdaylist = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+
+print('Today is', weekdaylist[weekday], ',', monthlist[month], day, year)
