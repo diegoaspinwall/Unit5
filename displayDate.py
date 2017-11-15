@@ -4,9 +4,9 @@
 
 from datetime import *
 
-day = datetime.date.today().day
-month = datetime.date.today().month
-year = datetime.date.today().year
-weekday = today.date.today().weekday()
+day = date.today().day
+month = date.today().month
+year = date.today().year
+weekday = date.today().weekday()
 
 print(day)
