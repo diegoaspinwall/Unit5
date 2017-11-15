@@ -5,6 +5,9 @@
 from datetime import *
 
 today = datetime.date.today.day()
-day = today.day
+day = today.day()
+month = today.month()
+year = today.year()
+weekday = today.weekday()
 
 print(day)
