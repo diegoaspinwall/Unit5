@@ -4,6 +4,6 @@
 
 from datetime import *
 
-today = datetime.date.today(today.day)
+today = datetime.date.today.day()
 
 print(today)
