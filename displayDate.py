@@ -12,4 +12,4 @@ weekday = date.today().weekday()
 monthlist = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 weekdaylist = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 
-print('Today is', weekdaylist[weekday], ',', monthlist[month], day, year)
+print('Today is', weekdaylist[weekday], ',', monthlist[month-1], day, year)
