@@ -13,7 +13,8 @@ while True:
         break
     else:
         list.append(qsearch)
+print(list)
 print('Min:',min(list))
-print('Mean:',(sum(list)))
+print('Mean:',sum(list[:]))
 print(len(list))
 print('Max:',max(list))
