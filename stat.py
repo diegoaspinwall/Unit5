@@ -12,7 +12,7 @@ while True:
     if qsearch == 'q':
         break
     else:
-        list.append(qsearch)
+        list.append(int(qsearch))
 print(list)
 print('Min:',min(list))
 print('Mean:',sum(list[:]))
