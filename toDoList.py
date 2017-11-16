@@ -16,9 +16,5 @@ while True:
         dolist.append(qsearch[4:])
     if qsearch[:6] == 'delete':
         dolist.remove(qsearch[7:])
-
-'''
-for word in words:
-    if word[0] in 'aeiouAEIOU':
-        print(word)
-'''
+    else:
+        print('Invalid Command')
