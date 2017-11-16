@@ -18,6 +18,6 @@ while True:
         if qsearch[7:] in dolist:
             dolist.remove(qsearch[7:])
         else:
-            print('Not on List')
+            print(qsearch[7:],'not on List')
     else:
         print('Invalid Command')
