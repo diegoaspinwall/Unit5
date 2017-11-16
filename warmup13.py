@@ -4,10 +4,10 @@
 
 from random import randint
 
+list = []
+
 for i in range(0,20):
     list.append(randint(1,100))
-
-list = []
 
 print('Min:',min(list))
 print('Max:',max(list))
