@@ -14,7 +14,9 @@ while True:
     else:
         list.append(int(qsearch))
 print(list)
+list.sort()
+print(list)
 print('Min:',min(list))
-print('Mean:',sum(list[:]))
-print(len(list))
+print('Mean:',sum(list)/len(list))
+print('Median:')
 print('Max:',max(list))
