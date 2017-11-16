@@ -13,4 +13,6 @@ while True:
         break
     else:
         list.append(q)
-print(list)
+print('Min:',min(list))
+print('Mean:',(sum(list)/len(list)))
+print('Max:',max(list))
