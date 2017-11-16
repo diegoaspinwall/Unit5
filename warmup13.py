@@ -7,10 +7,10 @@ from random import randint
 nums = []
 
 for i in range(0,20):
-    nums.append(randint(1,100)
+    num = randint(1,100)
+    nums.append(num)
 
-print(nums)
 
-print('Min:',min(nums))
-print('Max:',max(nums))
-print('Sum:',sum(nums))
+print('Min:',min(int(nums)))
+print('Max:',max(int(nums)))
+print('Sum:',sum(int(nums)))
