@@ -7,7 +7,7 @@ from random import randint
 nums = []
 
 for i in range(0,20):
-    nums.append(randint(1,100))
+    nums.append(randint(1,100)
 
 print(nums)
 
