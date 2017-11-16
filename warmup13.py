@@ -5,7 +5,7 @@
 from random import randint
 
 for i in range(0,20):
-    append.list = randint(1,100)
+    list.append(randint(1,100))
 
 list = []
 
