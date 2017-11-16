@@ -26,6 +26,8 @@ for i in list:
     if list.count(i)>high:
         high = list.count(i)
         num = list[i-1]
+    elif len(list)>1 and high == 1:
+        num = 'None'
 
 print('Min:',min(list))
 print('Mean:',sum(list)/len(list))
