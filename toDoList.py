@@ -12,5 +12,12 @@ while True:
     elif qsearch == 'print':
         for w in dolist:
             print(w)
-    else:
-        dolist.append(qsearch)
+    for w in qsearch:
+        if w[:3] == 'add'
+        dolist.append(qsearch[4:])
+
+'''
+for word in words:
+    if word[0] in 'aeiouAEIOU':
+        print(word)
+'''
