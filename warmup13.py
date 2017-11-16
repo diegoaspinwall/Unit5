@@ -4,11 +4,11 @@
 
 from random import randint
 
-list = []
+nums = []
 
 for i in range(0,20):
-    list.append(randint(1,100))
+    nums.append(randint(1,100))
 
-print('Min:',min(list))
-print('Max:',max(list))
-print('Sum:',sum(list))
+print('Min:',min(nums))
+print('Max:',max(nums))
+print('Sum:',sum(nums))
