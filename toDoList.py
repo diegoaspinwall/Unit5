@@ -15,6 +15,9 @@ while True:
     if qsearch[:3] == 'add':
         dolist.append(qsearch[4:])
     if qsearch[:6] == 'delete':
-        dolist.remove(qsearch[7:])
+        if qsearch[7:] in dolist:
+            dolist.remove(qsearch[7:])
+        else:
+            print('Not on List')
     else:
         print('Invalid Command')
