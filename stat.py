@@ -8,11 +8,12 @@ print('Enter "q" when done')
 list = []
 
 while True:
-    q = input('>')
-    if q == 'q':
+    qsearch = input('>')
+    if qsearch == 'q':
         break
     else:
-        list.append(q)
+        list.append(qsearch)
 print('Min:',min(list))
-print('Mean:',(sum(list)/len(list)))
+print('Mean:',(sum(list)))
+print(len(list))
 print('Max:',max(list))
