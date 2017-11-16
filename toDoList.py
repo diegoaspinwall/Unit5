@@ -10,8 +10,6 @@ while True:
     if 'quit' in qsearch:
         break
     elif qsearch == 'print':
-        print(dolist)'''
-        
-    
-        list.append(int(qsearch))
-'''
+        print(dolist)
+    else:
+        dolist.append(qsearch)
