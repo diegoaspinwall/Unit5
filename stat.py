@@ -14,14 +14,13 @@ while True:
     else:
         list.append(int(qsearch))
 
-median = (list[len(list)/2])
+median = str(list[len(list)/2])
 if len(list)%2 == 0:
-    median = median + (list[(len(list)/2)-1])
+    median = median, 'and', str(list[(len(list)/2)-1])
 
 list.sort()
 print(list)
 print('Min:',min(list))
 print('Mean:',sum(list)/len(list))
 print('Median:',median)
-
 print('Max:',max(list))
