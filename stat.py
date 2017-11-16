@@ -27,9 +27,8 @@ for i in list:
         high = list.count(i)
         num = list[i-1]
 
-print(list)
 print('Min:',min(list))
 print('Mean:',sum(list)/len(list))
 print('Median:',median)
-print('Mode:',num)
 print('Max:',max(list))
+print('Mode:',num)
