@@ -14,6 +14,8 @@ while True:
             print(w)
     if qsearch[:3] == 'add':
         dolist.append(qsearch[4:])
+    if qsearch[:6] == 'delete':
+        dolist.remove(qsearch[7:])
 
 '''
 for word in words:
