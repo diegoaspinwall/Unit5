@@ -13,10 +13,15 @@ while True:
         break
     else:
         list.append(int(qsearch))
-print(list)
+
+median = (list[len(list)/2])
+if len(list)%2 == 0:
+    median = median + (list[(len(list)/2)-1])
+
 list.sort()
 print(list)
 print('Min:',min(list))
 print('Mean:',sum(list)/len(list))
-print('Median:')
+print('Median:',median)
+
 print('Max:',max(list))
