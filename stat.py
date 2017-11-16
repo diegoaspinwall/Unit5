@@ -18,7 +18,7 @@ list.sort()
 
 median = (list[len(list)/2])
 if len(list)%2 == 0:
-    median = median, 'and', (list[(len(list)/2)-1])
+    median = median, 'and', list[(len(list)/2)-1]
 
 high = list.count(list[0])
 num = list[0]
