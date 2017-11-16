@@ -12,9 +12,9 @@ while True:
     elif qsearch == 'print':
         for w in dolist:
             print(w)
-    elif qsearch[:3] == 'add':
+    elif qsearch[:4] == 'add ':
         dolist.append(qsearch[4:])
-    elif qsearch[:6] == 'delete':
+    elif qsearch[:7] == 'delete ':
         if qsearch[7:] in dolist:
             dolist.remove(qsearch[7:])
         else:
