@@ -13,4 +13,4 @@ while True:
         break
     else:
         list.append(q)
-
+print(list)
