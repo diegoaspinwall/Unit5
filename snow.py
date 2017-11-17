@@ -15,6 +15,7 @@ if __name__ == '__main__':
     whiteOutline = LineStyle(1,white)
     
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
+    snowBlock = 
     
     Sprite(backgRectangle)
     App().run()
