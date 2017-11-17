@@ -15,4 +15,4 @@ whiteOutline = LineStyle(1,white)
 backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
 
 Sprite(backgRectangle)
-app().run()
+App().run()
