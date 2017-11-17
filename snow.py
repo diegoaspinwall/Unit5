@@ -10,4 +10,7 @@ backg = Color(0x000000,1)
 backgOutline = LineStyle(1,backg)
 whiteOutline = LineStyle(1,white)
 
-redRectangle = RectangleAsset(200,100,blackOutline,red)
+backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
+
+Sprite(backgRectangle)
+app().run()
