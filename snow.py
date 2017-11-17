@@ -5,7 +5,7 @@
 from ggame import *
 
 COLS = 20
-SIZE = 10
+SIZE = 15
 
 white = Color(0xffffff,1)
 backg = Color(0x000000,1)
