@@ -10,7 +10,7 @@ def spriteflake():
 
 def step():
     data['frames'] += 1
-    if data['frames'] == 200:
+    if data['frames'] == 20:
         spriteflake()
 
 if __name__ == '__main__':
