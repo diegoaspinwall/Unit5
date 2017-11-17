@@ -17,7 +17,7 @@ if __name__ == '__main__':
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
     snowBlock = RectangleAsset(SIZE,SIZE,whiteOutline,white)
     
-    fallflake = Sprite(paddleBox, (0,randint(0,COLS)))
+    fallflake = Sprite(paddleBox, (0,SIZE*randint(0,COLS)))
     
     Sprite(backgRectangle)
     App().run()
