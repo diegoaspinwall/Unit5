@@ -2,6 +2,8 @@
 #11-17-17
 #snow.py
 
+from ggame import *
+
 COLS = 20
 SIZE = 10
 
