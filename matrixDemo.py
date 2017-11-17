@@ -14,4 +14,4 @@ printBoard()
 row = int(input('Enter a row number: '))
 col = int(input('Enter a column number: '))
 
-borad[row][col] = 'X'
+borad[row-1][col-1] = 'X'
