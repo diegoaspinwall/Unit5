@@ -15,7 +15,9 @@ if __name__ == '__main__':
     whiteOutline = LineStyle(1,white)
     
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
-    snowBlock = 
+    snowBlock = RectangleAsset(SIZE,SIZE,whiteOutline,white)
+    
+    fallflake = Sprite(paddleBox, (0,randint(0,COLS)))
     
     Sprite(backgRectangle)
     App().run()
