@@ -29,4 +29,4 @@ if __name__ == '__main__':
     fallflake = Sprite(paddleBox)
     
     Sprite(backgRectangle)
-    App().run()
+    App().run(step)
