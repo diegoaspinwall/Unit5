@@ -5,7 +5,8 @@
 from ggame import *
 
 def spriteflake():
-    fallflake.x = SIZE*randint(0,COLS)
+    Sprite(snowBlock, (SIZE*randint(0,COLS),SIZE*randint(0,COLS)))
+    #fallflake.x = SIZE*randint(0,COLS)
     data['frames'] = 0
 
 def step():
@@ -25,8 +26,6 @@ if __name__ == '__main__':
     
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
     snowBlock = RectangleAsset(SIZE,SIZE,whiteOutline,white)
-    
-    fallflake = Sprite(snowBlock)
     
     Sprite(backgRectangle)
     App().run(step)
