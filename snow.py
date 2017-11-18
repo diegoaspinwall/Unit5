@@ -13,7 +13,7 @@ def step():
     if data['frames'] == 20:
         spriteflake()
         data['frames'] = 0
-    fallflake.y += 1
+    #fallflake.y += 1
 
 
 if __name__ == '__main__':
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     COLS = 30
     SIZE = 10
     
-    white = Color(0xffffff,1)
+    white = Color(0xff00ff,1)
     backg = Color(0x000000,1)
     backgOutline = LineStyle(1,backg)
     whiteOutline = LineStyle(1,white)
@@ -32,5 +32,5 @@ if __name__ == '__main__':
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
     snowBlock = RectangleAsset(SIZE,SIZE,whiteOutline,white)
     
-    Sprite(backgRectangle)
+    #Sprite(backgRectangle)
     App().run(step)
