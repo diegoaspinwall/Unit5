@@ -13,6 +13,7 @@ def step():
     if data['frames'] == 20:
         spriteflake()
         data['frames'] = 0
+    fallflake.y += 1
 
 
 if __name__ == '__main__':
