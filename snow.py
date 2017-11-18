@@ -6,7 +6,7 @@ from ggame import *
 from random import randint
 
 def spriteflake():
-    Sprite(snowBlock, (SIZE*randint(0,COLS-1),SIZE*randint(0,COLS-1)))
+    Sprite(snowBlock, (SIZE*randint(0,COLS-1),0))
 
 def step():
     data['frames'] += 1
