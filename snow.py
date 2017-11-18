@@ -22,7 +22,7 @@ if __name__ == '__main__':
     COLS = 30
     SIZE = 10
     
-    white = Color(0xfff00f,1)
+    white = Color(0xffffff,1)
     backg = Color(0x000000,1)
     backgOutline = LineStyle(1,backg)
     whiteOutline = LineStyle(1,white)
