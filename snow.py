@@ -3,6 +3,7 @@
 #snow.py
 
 from ggame import *
+from random import randint
 
 def spriteflake():
     Sprite(snowBlock, (SIZE*randint(0,COLS),SIZE*randint(0,COLS)))
