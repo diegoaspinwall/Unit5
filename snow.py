@@ -6,12 +6,12 @@ from ggame import *
 
 def spriteflake():
     Sprite(snowBlock, (30,30))
-    data['frames'] = 0
 
 def step():
     data['frames'] += 1
     if data['frames'] == 20:
         spriteflake()
+        data['frames'] = 0
 
 if __name__ == '__main__':
     
