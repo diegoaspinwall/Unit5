@@ -6,14 +6,14 @@ from ggame import *
 from random import randint
 
 def spriteflake():
-    fallflake
+    Sprite(snowBlock, (SIZE*randint(0,COLS-1),0))
 
 def step():
     data['frames'] += 1
     if data['frames'] == 20:
         spriteflake()
         data['frames'] = 0
-    
+    fallflake.y += 1
 
 if __name__ == '__main__':
     
