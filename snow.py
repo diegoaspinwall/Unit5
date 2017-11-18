@@ -6,13 +6,14 @@ from ggame import *
 from random import randint
 
 def spriteflake():
-    Sprite(snowBlock, (SIZE*randint(0,COLS-1),0))
+    fallflake
 
 def step():
     data['frames'] += 1
     if data['frames'] == 20:
         spriteflake()
         data['frames'] = 0
+    
 
 if __name__ == '__main__':
     
@@ -29,6 +30,7 @@ if __name__ == '__main__':
     
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
     snowBlock = RectangleAsset(SIZE,SIZE,whiteOutline,white)
+    fallflake = Sprite(snowBlock, (SIZE*randint(0,COLS-1),0))
     
     Sprite(backgRectangle)
     App().run(step)
