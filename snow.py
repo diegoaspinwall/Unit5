@@ -5,7 +5,7 @@
 from ggame import *
 
 def spriteflake():
-    Sprite(snowBlock, (randint(0,10),randint(0,10)))
+    Sprite(snowBlock, (SIZE*randint(0,COLS),SIZE*randint(0,COLS)))
 
 def step():
     data['frames'] += 1
