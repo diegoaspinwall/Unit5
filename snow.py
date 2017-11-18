@@ -7,12 +7,12 @@ from random import randint
 
 def spriteflake():
     fallflake = Sprite(snowBlock, (SIZE*randint(0,COLS-1),0))
+    data['frames'] = 0
 
 def step():
     data['frames'] += 1
     if data['frames'] == 20:
         spriteflake()
-        data['frames'] = 0
     #fallflake.y += 1
 
 
@@ -32,5 +32,5 @@ if __name__ == '__main__':
     backgRectangle = RectangleAsset(COLS*SIZE,COLS*SIZE,backgOutline,backg)
     snowBlock = RectangleAsset(SIZE,SIZE,whiteOutline,white)
     
-    #Sprite(backgRectangle)
+    Sprite(backgRectangle)
     App().run(step)
