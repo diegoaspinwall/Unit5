@@ -11,6 +11,9 @@ RAD = 10
 
 if __name__ == '__main__':
     
+    data = {}
+    data['antList'] = []
+    
     red = Color(0x660000,1)
     ant = CircleAsset(RAD,LineStyle(1,red),red)
     
