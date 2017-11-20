@@ -26,7 +26,7 @@ if __name__ == '__main__':
     red = Color(0x660000,1)
     ant = CircleAsset(RAD,LineStyle(1,red),red)
     
-    for i in range(0,100):
+    for i in range(0,50):
         data['antList'].append(Sprite(ant,(randint(RAD,WIDTH),randint(RAD,HEIGHT))))
     
     App().run(step)
