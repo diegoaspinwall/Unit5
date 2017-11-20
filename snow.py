@@ -5,6 +5,8 @@
 from ggame import *
 from random import randint
 
+flakelist = []
+
 def spriteflake():
     fallflake = Sprite(snowBlock, (SIZE*randint(0,COLS-1),0))
     data['frames'] = 0
