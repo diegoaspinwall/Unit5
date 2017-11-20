@@ -3,6 +3,7 @@
 #antsDemo.py - how to use lists with graphics
 
 from ggame import *
+from random import randint
 
 if __name__ == '__main__':
     
