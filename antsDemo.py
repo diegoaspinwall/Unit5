@@ -11,8 +11,10 @@ RAD = 5
 
 def step():
     for ant in data['antList']:
-        ant.x += 1
-        ant.y += 1
+        dx = randint(-4,3)
+        dy = randint(-4,3)
+        ant.x += dx
+        ant.y += dy
 
 if __name__ == '__main__':
     
