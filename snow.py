@@ -16,7 +16,7 @@ def step():
         spriteflake()
     for flake in data['flakes']:
         flake.y += 2
-        if flake.y == COLS*SIZE:
+        if flake.y == COLS*SIZE-SIZE:
             data['flakes'].remove(flake)
 
 
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     COLS = 100
     SIZE = 3
     
-    white = Color(0xffffff,1)
+    white = Color(0x00ffff,1)
     backg = Color(0x000000,1)
     backgOutline = LineStyle(1,backg)
     whiteOutline = LineStyle(1,white)
