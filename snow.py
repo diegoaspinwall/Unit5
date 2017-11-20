@@ -15,7 +15,7 @@ def step():
     if data['frames'] == 10:
         spriteflake()
     for flake in data['flakes']:
-        flake.y += 1
+        flake.y += 5
 
 
 if __name__ == '__main__':
