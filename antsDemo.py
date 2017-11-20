@@ -9,6 +9,11 @@ WIDTH = 800
 HEIGHT = 400
 RAD = 10
 
+def step():
+    for ant in data['antList']:
+        ant.x += 1
+        ant.y += 1
+
 if __name__ == '__main__':
     
     data = {}
@@ -20,4 +25,4 @@ if __name__ == '__main__':
     for i in range(0,10):
         data['antList'].append(Sprite(ant,(randint(RAD,WIDTH),randint(RAD,HEIGHT))))
     
-    App().run()
+    App().run(step)
