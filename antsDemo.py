@@ -7,13 +7,14 @@ from random import randint
 
 WIDTH = 800
 HEIGHT = 400
+RAD = 10
 
 if __name__ == '__main__':
     
     red = Color(0x660000,1)
-    ant = CircleAsset(10,LineStyle(1,red),red)
+    ant = CircleAsset(RAD,LineStyle(1,red),red)
     
     for i in range(0,10):
-        Sprite(ant,(randint(10,WIDTH),randint(10,HEIGHT)))
+        Sprite(ant,(randint(RAD,WIDTH),randint(RAD,HEIGHT)))
     
     App().run()
