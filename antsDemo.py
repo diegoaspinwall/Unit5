@@ -6,7 +6,7 @@ from ggame import *
 
 if __name__ == '__main__':
     
-    red = Color(0xff0000,1)
+    red = Color(0x660000,1)
     ant = CircleAsset(10,LineStyle(1,red),red)
     
     Sprite(ant, (50,50))
