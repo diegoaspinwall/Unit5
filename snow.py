@@ -16,7 +16,7 @@ def step():
         spriteflake()
     for flake in data['flakes']:
         flake.y += 2
-        if flake.y == ((COLS*SIZE)+(SIZE)):
+        if flake.y == (297):
             data['flakes'].remove(flake)
 
 
