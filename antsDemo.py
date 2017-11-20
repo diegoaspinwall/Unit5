@@ -13,6 +13,6 @@ if __name__ == '__main__':
     red = Color(0x660000,1)
     ant = CircleAsset(10,LineStyle(1,red),red)
     
-    Sprite(ant,(randint(1,WIDTH),randint(1,HEIGHT)))
+    Sprite(ant,(randint(10,WIDTH),randint(10,HEIGHT)))
     
     App().run()
