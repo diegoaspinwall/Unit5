@@ -10,4 +10,5 @@ if __name__ == '__main__':
     ant = CircleAsset(10,LineStyle(1,red),red)
     
     Sprite(ant, (50,50))
+    
     App().run()
