@@ -18,6 +18,6 @@ if __name__ == '__main__':
     ant = CircleAsset(RAD,LineStyle(1,red),red)
     
     for i in range(0,10):
-        Sprite(ant,(randint(RAD,WIDTH),randint(RAD,HEIGHT)))
+        data['antList'].append(Sprite(ant,(randint(RAD,WIDTH),randint(RAD,HEIGHT))))
     
     App().run()
