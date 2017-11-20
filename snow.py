@@ -15,7 +15,7 @@ def step():
     if data['frames'] == 10:
         spriteflake()
     for flake in data['flakes']:
-        flake.y += SIZE/2
+        flake.y += 1
         if flake.y == (COLS*SIZE-SIZE):
             data['flakes'].remove(flake)
 
