@@ -24,8 +24,8 @@ if __name__ == '__main__':
     data['frames'] = 0
     data['flakes'] = []
     
-    COLS = 300
-    SIZE = 1
+    COLS = 100
+    SIZE = 3
     
     white = Color(0xffffff,1)
     backg = Color(0x000000,1)
