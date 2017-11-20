@@ -12,7 +12,7 @@ def spriteflake():
 
 def step():
     data['frames'] += 1
-    if data['frames'] == 20:
+    if data['frames'] == 10:
         spriteflake()
     for flake in data['flakes']:
         flake.y += 1
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     data['flakes'] = []
     
     COLS = 30
-    SIZE = 10
+    SIZE = 5
     
     white = Color(0xffffff,1)
     backg = Color(0x000000,1)
