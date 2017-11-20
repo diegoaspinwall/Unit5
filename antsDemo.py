@@ -7,7 +7,7 @@ from random import randint
 
 WIDTH = 800
 HEIGHT = 400
-RAD = 10
+RAD = 5
 
 def step():
     for ant in data['antList']:
