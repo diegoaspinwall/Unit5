@@ -32,10 +32,7 @@ if __name__ == '__main__':
     data['fallpos'] = []
     for i in range(0,100):
         data['fallpos'].append(0)
-    
-    print(data['fallpos'])
-    print(len(data['fallpos']))
-    
+
     COLS = 100
     SIZE = 3
     
