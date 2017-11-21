@@ -9,7 +9,7 @@ def spriteflake():
     xpos = randint(0,COLS-1)
     data['flakes'].append(Sprite(snowBlock, (SIZE*xpos,0)))
     data['frames'] = 0
-    data['fallpos'][0] += 1
+    data['fallpos'][xpos] += 1
     print(data['fallpos'])
     
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     data = {}
     data['frames'] = 0
     data['flakes'] = []
-    data['fallpos'] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    data['fallpos'] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     
     COLS = 100
     SIZE = 3
