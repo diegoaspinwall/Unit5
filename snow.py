@@ -6,11 +6,11 @@ from ggame import *
 from random import randint
 
 def spriteflake():
-    xpos = SIZE*randint(0,COLS-1)
-    data['flakes'].append(Sprite(snowBlock, (xpos,0)))
+    xpos = randint(0,COLS-1)
+    data['flakes'].append(Sprite(snowBlock, (SIZE*xpos,0)))
     data['frames'] = 0
-    #data['fallpos'][xpos] += 1
-    #print(data['fallpos'])
+    data['fallpos'][0] += 1
+    print(data['fallpos'])
     
 
 def step():
