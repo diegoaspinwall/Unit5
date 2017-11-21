@@ -9,8 +9,8 @@ def spriteflake():
     xpos = SIZE*randint(0,COLS-1)
     data['flakes'].append(Sprite(snowBlock, (xpos,0)))
     data['frames'] = 0
-    data['fallpos'][xpos] += 1
-    print(data['fallpos'])
+    #data['fallpos'][xpos] += 1
+    #print(data['fallpos'])
     
 
 def step():
