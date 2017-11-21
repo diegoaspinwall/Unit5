@@ -16,10 +16,12 @@ def step():
     data['frames'] += 1
     if data['frames'] == 10:
         spriteflake()
+    count = 0
     for flake in data['flakes']:
         flake.y += 1
-        if flake.y == (COLS*SIZE-SIZE*data['fallpos'][flake]):
+        if flake.y == (COLS*SIZE-SIZE*data['fallpos'][count]):
             data['flakes'].remove(flake)
+        count += 1
 
 
 if __name__ == '__main__':
