@@ -6,7 +6,8 @@ from ggame import *
 from random import randint
 
 def spriteflake():
-    data['flakes'].append(Sprite(snowBlock, (SIZE*randint(0,COLS-1),0)))
+    xpos = SIZE*randint(0,COLS-1)
+    data['flakes'].append(Sprite(snowBlock, (xpos,0)))
     data['frames'] = 0
     
 
@@ -25,6 +26,7 @@ if __name__ == '__main__':
     data = {}
     data['frames'] = 0
     data['flakes'] = []
+    data['fallpos'] = []
     
     COLS = 100
     SIZE = 3
