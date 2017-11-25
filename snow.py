@@ -26,15 +26,18 @@ def step():
 
 if __name__ == '__main__':
     
+    COLS = 100
+    SIZE = 3
+    
     data = {}
     data['frames'] = 0
     data['flakes'] = []
     data['fallpos'] = []
-    for i in range(0,100):
+    for i in range(0,COLS):
         data['fallpos'].append(0)
     
-    COLS = 100
-    SIZE = 3
+    #COLS = 100
+    #SIZE = 3
     
     white = Color(0x00ffff,1)
     backg = Color(0x000000,1)
