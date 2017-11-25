@@ -40,7 +40,7 @@ if __name__ == '__main__':
     for i in range(0,COLS):
         data['fallpos'].append(0)
 
-    white = Color(0x00ffff,1)
+    white = Color(0xffffff,1)
     backg = Color(0x000000,1)
     backgOutline = LineStyle(1,backg)
     whiteOutline = LineStyle(1,white)
