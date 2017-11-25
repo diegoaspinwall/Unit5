@@ -8,7 +8,6 @@ from random import randint
 def spriteflake():
     xpos = randint(0,COLS-1)
     data['flakes'].append(Sprite(snowBlock, (SIZE*xpos,-SIZE)))
-    data['frames'] = 0
     data['fallpos'][xpos] += 1
     print(data['fallpos'])
     
@@ -17,6 +16,7 @@ def step():
     data['frames'] += 1
     if data['frames'] == 10:
         spriteflake()
+        data['frames'] = 0
     place = 0
     for flake in data['flakes']:
         flake.y += 1
