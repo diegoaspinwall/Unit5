@@ -23,7 +23,7 @@ def step():
         flake.y += 1
         if flake.y == ((COLS-1)*SIZE-SIZE*(data['stopflake'][place])):
             data['flakes'].remove(flake)
-            data['stopflake'].remove(place)
+            data['stopflake'].remove(data['stopflake'][place])
         place += 1
 
 
