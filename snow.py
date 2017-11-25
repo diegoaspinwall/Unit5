@@ -7,7 +7,7 @@ from random import randint
 
 def spriteflake():
     xpos = randint(0,COLS-1)
-    data['flakes'].append(Sprite(snowBlock, (SIZE*xpos,0)))
+    data['flakes'].append(Sprite(snowBlock, (SIZE*xpos,-SIZE)))
     data['frames'] = 0
     data['fallpos'][xpos] += 1
     
