@@ -21,7 +21,7 @@ def step():
     place = 0
     for flake in data['flakes']:
         flake.y += 1
-        if flake.y == ((COLS-1)*SIZE-SIZE*(data['fallpos'][place])):
+        if flake.y == ((COLS-1)*SIZE-SIZE*(data['stopflake'][place])):
             data['flakes'].remove(flake)
         place += 1
 
