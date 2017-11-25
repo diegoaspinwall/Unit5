@@ -16,25 +16,25 @@ def step():
     data['frames'] += 1
     if data['frames'] == 10:
         spriteflake()
-    count = 0
+    place = 0
     for flake in data['flakes']:
         flake.y += 1
-        if flake.y == (COLS*SIZE-SIZE*(data['fallpos'][count])-SIZE):
+        if flake.y == (COLS*SIZE-SIZE*(data['fallpos'][place])-SIZE):
             data['flakes'].remove(flake)
-        count += 1
+        place += 1
 
 
 if __name__ == '__main__':
+    
+    COLS = 10
+    SIZE = 30
     
     data = {}
     data['frames'] = 0
     data['flakes'] = []
     data['fallpos'] = []
-    for i in range(0,100):
+    for i in range(0,COLS):
         data['fallpos'].append(0)
-
-    COLS = 100
-    SIZE = 3
     
     white = Color(0x00ffff,1)
     backg = Color(0x000000,1)
