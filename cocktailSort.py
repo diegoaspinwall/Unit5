@@ -44,7 +44,7 @@ procedure introsort(A, maxdepth):
 '''
 def mySort(A):
     maxdepth = int(log(len(A)))*2
-    mySort (A, maxdepth)
+    sort(A, maxdepth)
 
 def sort(A, maxdepth):
     n = len(A)
