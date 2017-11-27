@@ -5,8 +5,9 @@
 from random import randint
 from time import time
 
-N = 100 #how many numbers will be sorted
+N = 1000 #how many numbers will be sorted
 
+'''
 def mySort(A):
     swapped = True
     while swapped:
@@ -23,6 +24,28 @@ def mySort(A):
                 A[i], A[i+1] = A[i+1], A[i]
                 swapped = True
     return A
+'''
+'''
+procedure sort(A : array):
+    let maxdepth = ⌊log(length(A))⌋ × 2
+    introsort(A, maxdepth)
+
+procedure introsort(A, maxdepth):
+    n ← length(A)
+    if n ≤ 1:
+        return  // base case
+    else if maxdepth = 0:
+        heapsort(A)
+    else:
+        p ← partition(A)  // assume this function does pivot selection, p is the final position of the pivot
+        introsort(A[0:p], maxdepth - 1)
+        introsort(A[p+1:n], maxdepth - 1)
+'''
+def mySort(A):
+    maxdepth = |log(len(A))|*2
+    mySort (A, maxdepth)
+def sort(L):
+    
 
 if __name__ == '__main__':
     
