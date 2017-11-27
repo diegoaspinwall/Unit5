@@ -4,7 +4,7 @@
 
 from ggame import *
 
-def printBoard:
+def printBoard():
     for row in range(0,3):
         for col in range(0,3):
             Sprite(hole, (50*row+10, 50*col+10))
@@ -18,5 +18,7 @@ if __name__ == '__main__':
     blackOutline = LineStyle(1,black)
     
     hole = CircleAsset(50,blackOutline,white)
+    
+    printBoard()
     
     App().run()
