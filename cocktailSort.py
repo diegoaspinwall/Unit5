@@ -65,7 +65,7 @@ def mySort(a):
 	for x in a:
 		holes[x - mi] += 1
 	i = 0
-	for count in xrange(size):
+	for count in range(size):
 		while holes[count] > 0:
 			holes[count] -= 1
 			a[i] = count + mi
