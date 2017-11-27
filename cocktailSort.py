@@ -58,6 +58,10 @@ def sort(A, maxdepth):
         introsort(A[p+1:n+1], maxdepth-1)
 '''
 
+
+def mySort(A):
+    return A.sort()
+
 if __name__ == '__main__':
     
     #make a list of N random numbers between 1 and N
