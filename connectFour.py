@@ -5,7 +5,7 @@
 from ggame import *
 
 def placePiece(event):
-    
+    Sprite(redfill, (50,50))
 
 def printBoard():
     for row in range(0,6):
