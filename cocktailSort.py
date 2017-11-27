@@ -4,6 +4,7 @@
 
 from random import randint
 from time import time
+from math import log
 
 N = 1000 #how many numbers will be sorted
 
@@ -44,7 +45,17 @@ procedure introsort(A, maxdepth):
 def mySort(A):
     maxdepth = int(log(len(A)))*2
     mySort (A, maxdepth)
-def sort(L):
+
+def sort(A, maxdepth):
+    n = len(A)
+    if n<=1:
+        return
+    elif maxdepth == 0:
+        heapsort(A)
+    else:
+        p = partition(A)
+        introsort(A[0:p+1], maxdepth-1)
+        introsort(A[p+1:n+1], maxdepth-1)
     
 
 if __name__ == '__main__':
