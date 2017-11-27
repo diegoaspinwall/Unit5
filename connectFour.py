@@ -4,7 +4,7 @@
 
 from ggame import *
 
-def placePiece():
+def placePiece(event):
     
 
 def printBoard():
@@ -21,7 +21,10 @@ if __name__ == '__main__':
     blackOutline = LineStyle(1,black)
     
     hole = CircleAsset(40,blackOutline,white)
+    redfill = CircleAsset(40,blackOutline,red)
+    bluefill = CircleAsset(40,blackOutline,blue)
     
     printBoard()
     
+    App().listenMouseEvent('click', placePiece)
     App().run()
