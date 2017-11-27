@@ -42,7 +42,7 @@ procedure introsort(A, maxdepth):
         introsort(A[p+1:n], maxdepth - 1)
 '''
 def mySort(A):
-    maxdepth = |log(len(A))|*2
+    maxdepth = ⌊log(len(A))⌋*2
     mySort (A, maxdepth)
 def sort(L):
     
