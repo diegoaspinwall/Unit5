@@ -58,6 +58,7 @@ def sort(A, maxdepth):
         introsort(A[p+1:n+1], maxdepth-1)
 '''
 
+#pigeonhole sorting - directly from wiki
 def mySort(a):
 	mi = min(a)
 	size = max(a) - mi + 1
