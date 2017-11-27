@@ -5,9 +5,9 @@
 from ggame import *
 
 def printBoard():
-    for row in range(0,3):
-        for col in range(0,3):
-            Sprite(hole, (110*row+60, 110*col+60))
+    for row in range(0,6):
+        for col in range(0,7):
+            Sprite(hole, (110*col+60, 110*row+60))
 
 if __name__ == '__main__':
     
