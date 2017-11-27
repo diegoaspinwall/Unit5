@@ -6,7 +6,7 @@ from random import randint
 from time import time
 from math import log
 
-N = 1000 #how many numbers will be sorted
+N = 100 #how many numbers will be sorted
 
 '''
 def mySort(A):
@@ -57,7 +57,6 @@ def sort(A, maxdepth):
         introsort(A[0:p+1], maxdepth-1)
         introsort(A[p+1:n+1], maxdepth-1)
 '''
-
 
 def mySort(A):
     return A.sort()
