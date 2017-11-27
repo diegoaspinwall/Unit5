@@ -35,6 +35,11 @@ end procedure
 def mySort(A):
     swapped = True
     while swapped:
+        swapped = False
+        for i in range(0,len(A)-1):
+            if A[i]>A[i+1]:
+                A[i], A[i+1] = A[i+1], A[i]#how you swap
+                swapped = True
         
     return A
 
