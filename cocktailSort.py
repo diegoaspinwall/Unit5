@@ -47,7 +47,6 @@ def mySort(A):
             if A[i]>A[i+1]:
                 A[i], A[i+1] = A[i+1], A[i]
                 swapped = True
-        
     return A
 
 if __name__ == '__main__':
