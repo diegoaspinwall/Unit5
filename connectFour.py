@@ -7,7 +7,7 @@ from ggame import *
 def printBoard():
     for row in range(0,6):
         for col in range(0,7):
-            Sprite(hole, (110*col+60, 110*row+60))
+            Sprite(hole, (90*col+50, 90*row+50))
 
 if __name__ == '__main__':
     
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     black = Color(0x000000,1)
     blackOutline = LineStyle(1,black)
     
-    hole = CircleAsset(50,blackOutline,white)
+    hole = CircleAsset(40,blackOutline,white)
     
     printBoard()
     
