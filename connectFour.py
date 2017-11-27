@@ -7,8 +7,7 @@ from ggame import *
 def printBoard:
     for row in range(0,3):
         for col in range(0,3):
-            print(board[row][col],' ',end = '')
-        print()
+            Sprite(hole, (50*row+10, 50*col+10))
 
 if __name__ == '__main__':
     
