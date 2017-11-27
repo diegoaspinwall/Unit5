@@ -58,8 +58,19 @@ def sort(A, maxdepth):
         introsort(A[p+1:n+1], maxdepth-1)
 '''
 
-def mySort(A):
-    return A.sort()
+def mySort(a):
+	mi = min(a)
+	size = max(a) - mi + 1
+	holes = [0] * size
+	for x in a:
+		holes[x - mi] += 1
+	i = 0
+	for count in xrange(size):
+		while holes[count] > 0:
+			holes[count] -= 1
+			a[i] = count + mi
+			i += 1
+	return a
 
 if __name__ == '__main__':
     
