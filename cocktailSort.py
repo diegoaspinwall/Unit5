@@ -41,7 +41,7 @@ procedure introsort(A, maxdepth):
         p ← partition(A)  // assume this function does pivot selection, p is the final position of the pivot
         introsort(A[0:p], maxdepth - 1)
         introsort(A[p+1:n], maxdepth - 1)
-'''
+
 def mySort(A):
     maxdepth = int(log(len(A)))*2
     sort(A, maxdepth)
@@ -56,7 +56,7 @@ def sort(A, maxdepth):
         p = partition(A)
         introsort(A[0:p+1], maxdepth-1)
         introsort(A[p+1:n+1], maxdepth-1)
-    
+'''
 
 if __name__ == '__main__':
     
