@@ -57,7 +57,9 @@ def heapsort(a, count):
 def heapify(a,count):
     start = iParent(count-1)
     while start ≥ 0:
-        
+        siftDown(a,start,count-1)
+        start = start-1
+
 
 
 if __name__ == '__main__':
