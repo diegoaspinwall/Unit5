@@ -27,19 +27,25 @@ def mySort(A):
     return A
 '''
 '''
-procedure heapify(a, count) is
-    (start is assigned the index in 'a' of the last parent node)
-    (the last element in a 0-based array is at index count-1; find the parent of that element)
-    start ← iParent(count-1)
-    
-    while start ≥ 0 do
-        (sift down the node at index 'start' to the proper place such that all nodes below
-         the start index are in heap order)
-        siftDown(a, start, count - 1)
-        (go to the next parent node)
-        start ← start - 1
-    (after sifting down the root all nodes/elements are in heap order)
+procedure siftDown(a, start, end) is
+    root ← start
 
+    while iLeftChild(root) ≤ end do    (While the root has at least one child)
+        child ← iLeftChild(root)   (Left child of root)
+        swap ← root                (Keeps track of child to swap with)
+
+        if a[swap] < a[child]
+            swap ← child
+        (If there is a right child and that child is greater)
+        if child+1 ≤ end and a[swap] < a[child+1]
+            swap ← child + 1
+        if swap = root
+            (The root holds the largest element. Since we assume the heaps rooted at the
+             children are valid, this means that we are done.)
+            return
+        else
+            swap(a[root], a[swap])
+            root ← swap            (repeat to continue sifting down the child now)
 '''
 
 #heapsort
@@ -56,10 +62,18 @@ def heapsort(a, count):
 
 def heapify(a,count):
     start = iParent(count-1)
-    while start ≥ 0:
+    while start >= 0:
         siftDown(a,start,count-1)
         start = start-1
 
+def siftDown(a, start, end):
+    root = start
+    while iLeftChild(root) <= end:
+        child = iLeftChild(root)
+        swap = root
+        if a[swap] < a[child]:
+            swap = child
+            
 
 
 if __name__ == '__main__':
