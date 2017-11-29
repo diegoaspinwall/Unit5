@@ -27,51 +27,38 @@ def mySort(A):
     return A
 '''
 '''
-procedure sort(A : array):
-    let maxdepth = ⌊log(length(A))⌋ × 2
-    introsort(A, maxdepth)
+procedure heapify(a, count) is
+    (start is assigned the index in 'a' of the last parent node)
+    (the last element in a 0-based array is at index count-1; find the parent of that element)
+    start ← iParent(count-1)
+    
+    while start ≥ 0 do
+        (sift down the node at index 'start' to the proper place such that all nodes below
+         the start index are in heap order)
+        siftDown(a, start, count - 1)
+        (go to the next parent node)
+        start ← start - 1
+    (after sifting down the root all nodes/elements are in heap order)
 
-procedure introsort(A, maxdepth):
-    n ← length(A)
-    if n ≤ 1:
-        return  // base case
-    else if maxdepth = 0:
-        heapsort(A)
-    else:
-        p ← partition(A)  // assume this function does pivot selection, p is the final position of the pivot
-        introsort(A[0:p], maxdepth - 1)
-        introsort(A[p+1:n], maxdepth - 1)
-
-def mySort(A):
-    maxdepth = int(log(len(A)))*2
-    sort(A, maxdepth)
-
-def sort(A, maxdepth):
-    n = len(A)
-    if n<=1:
-        return
-    elif maxdepth == 0:
-        heapsort(A)
-    else:
-        p = partition(A)
-        introsort(A[0:p+1], maxdepth-1)
-        introsort(A[p+1:n+1], maxdepth-1)
 '''
 
-#pigeonhole sorting - directly from wiki
-def mySort(a):
-	mi = min(a)
-	size = max(a) - mi + 1
-	holes = [0] * size
-	for x in a:
-		holes[x - mi] += 1
-	i = 0
-	for count in range(size):
-		while holes[count] > 0:
-			holes[count] -= 1
-			a[i] = count + mi
-			i += 1
-	return a
+#heapsort
+iParent(i)     = int((i-1) / 2)
+iLeftChild(i)  = 2*i + 1
+iRightChild(i) = 2*i + 2
+
+def heapsort(a, count):
+	end = count-1
+	while end>0:
+	    a[end], a[0] = a[0], a[end]
+	    end = end-1
+	    siftDown(a,0,end)
+
+def heapify(a,count):
+    start = iParent(count-1)
+    while start ≥ 0:
+        
+
 
 if __name__ == '__main__':
     
