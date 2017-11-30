@@ -39,11 +39,11 @@ def iRightChild(i):
     return (2*i + 2)
 
 def heapsort(a, count):
-	end = count-1
-	while end>0:
-	    a[end], a[0] = a[0], a[end]
-	    end = end-1
-	    siftDown(a,0,end)
+    end = count-1
+    while end>0:
+        a[end], a[0] = a[0], a[end]
+        end = end-1
+        siftDown(a,0,end)
     return a
 
 def heapify(a,count):
