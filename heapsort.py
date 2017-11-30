@@ -1,6 +1,6 @@
 #Diego Aspinwall
 #10-27-17
-#cocktailSort.py - implementation of cocktail sort
+#heapsort.py - implementation of heap sort
 
 from random import randint
 from time import time
