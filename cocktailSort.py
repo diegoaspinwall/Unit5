@@ -79,12 +79,10 @@ if __name__ == '__main__':
         numbers[i] = randint(1,N)
         
     pythonSort = sorted(numbers)#Python's sort
-    print(pythonSort)
     
     #time how long your sort takes
     t1 = time()
     numbers = heapsort(numbers, N)
-    print(numbers)
     t2 = time()
        
     #print whether the sort worked or not
