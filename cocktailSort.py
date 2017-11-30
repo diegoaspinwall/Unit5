@@ -76,7 +76,8 @@ if __name__ == '__main__':
     for i in range(N):
         numbers[i] = randint(1,N)
         
-    pythonSort = sorted(numbers) #Python's sort
+    pythonSort = sorted(numbers)#Python's sort
+    print(pythonSort)
     
     #time how long your sort takes
     t1 = time()
