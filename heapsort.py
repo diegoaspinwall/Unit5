@@ -43,6 +43,9 @@ def partition(A, lo, hi):
         if A[j] < pivot:
             i=i+1
             A[i], A[j] = A[j], A[i]
+    if A[hi] < A[i+1]:
+        A[i+1], A[hi] = A[hi], A[i+1]
+    return i+1
 
 #heapsort
 def iParent(i):
