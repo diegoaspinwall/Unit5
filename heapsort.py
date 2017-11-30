@@ -9,21 +9,16 @@ from math import log
 N = 100 #how many numbers will be sorted
 
 """
-procedure sort(A : array):
-    let maxdepth = ⌊log(length(A))⌋ × 2
-    introsort(A, maxdepth)
-
-procedure introsort(A, maxdepth):
-    n ← length(A)
-    if n ≤ 1:
-        return  // base case
-    else if maxdepth = 0:
-        heapsort(A)
-    else:
-        p ← partition(A)  // assume this function does pivot selection, p is the final position of the pivot
-        introsort(A[0:p], maxdepth - 1)
-        introsort(A[p+1:n], maxdepth - 1)
-
+algorithm partition(A, lo, hi) is
+    pivot := A[hi]
+    i := lo - 1    
+    for j := lo to hi - 1 do
+        if A[j] < pivot then
+            i := i + 1
+            swap A[i] with A[j]
+    if A[hi] < A[i + 1] then
+        swap A[i + 1] with A[hi]
+    return i + 1
 """
 #introsort
 def sort(A):
@@ -37,9 +32,17 @@ def introsort(A,maxdepth):
     elif maxdepth == 0:
         heapsort(A,N)
     else:
-        p = partition(A)
+        p = partition(A, min(A), max(A))
         introsort(A[0:p], maxdepth-1)
         introsort(A[p+1:n], maxdepth-1)
+
+def partition(A, lo, hi):
+    pivot = A[hi]
+    i = lo-1
+    for j in range(lo, hi-1):
+        if A[j] < pivot:
+            i=i+1
+            A[i], A[j] = A[j], A[i]
 
 #heapsort
 def iParent(i):
