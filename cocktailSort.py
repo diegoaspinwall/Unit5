@@ -32,11 +32,11 @@ def mySort(A):
 
 #heapsort
 def iParent(i):
-    int((i-1)/2)
+    return int((i-1)/2)
 def iLeftChild(i):
-    2*i + 1
+    return (2*i + 1)
 def iRightChild(i):
-    2*i + 2
+    return (2*i + 2)
 
 def heapsort(a, count):
 	end = count-1
