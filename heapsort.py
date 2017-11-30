@@ -1,6 +1,6 @@
 #Diego Aspinwall
 #10-27-17
-#heapsort.py - implementation of heap sort
+#heapsort.py - implementation of heap sort w/ introsort
 
 from random import randint
 from time import time
