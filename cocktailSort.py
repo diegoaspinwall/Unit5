@@ -44,6 +44,7 @@ def heapsort(a, count):
 	    a[end], a[0] = a[0], a[end]
 	    end = end-1
 	    siftDown(a,0,end)
+    return a
 
 def heapify(a,count):
     start = iParent(count-1)
@@ -82,6 +83,7 @@ if __name__ == '__main__':
     #time how long your sort takes
     t1 = time()
     numbers = heapsort(numbers, N)
+    print(numbers)
     t2 = time()
        
     #print whether the sort worked or not
