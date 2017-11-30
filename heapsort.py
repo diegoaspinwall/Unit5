@@ -8,18 +8,6 @@ from math import log
 
 N = 100 #how many numbers will be sorted
 
-"""
-algorithm partition(A, lo, hi) is
-    pivot := A[hi]
-    i := lo - 1    
-    for j := lo to hi - 1 do
-        if A[j] < pivot then
-            i := i + 1
-            swap A[i] with A[j]
-    if A[hi] < A[i + 1] then
-        swap A[i + 1] with A[hi]
-    return i + 1
-"""
 #introsort
 def sort(A):
     maxdepth = int(log(len(A)))*2
