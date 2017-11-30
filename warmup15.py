@@ -8,4 +8,4 @@ def doubled(a):
         output.append(2*i)
     return output
 
-print(doubled([2,4,6])
+print(doubled([2,4,6]))
