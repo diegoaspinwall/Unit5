@@ -31,9 +31,12 @@ def mySort(A):
 '''
 
 #heapsort
-iParent(i)     = int((i-1) / 2)
-iLeftChild(i)  = 2*i + 1
-iRightChild(i) = 2*i + 2
+def iParent(i):
+    int((i-1)/2)
+def iLeftChild(i):
+    2*i + 1
+def iRightChild(i):
+    2*i + 2
 
 def heapsort(a, count):
 	end = count-1
