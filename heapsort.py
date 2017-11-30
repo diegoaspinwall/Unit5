@@ -8,6 +8,39 @@ from math import log
 
 N = 100 #how many numbers will be sorted
 
+"""
+procedure sort(A : array):
+    let maxdepth = ⌊log(length(A))⌋ × 2
+    introsort(A, maxdepth)
+
+procedure introsort(A, maxdepth):
+    n ← length(A)
+    if n ≤ 1:
+        return  // base case
+    else if maxdepth = 0:
+        heapsort(A)
+    else:
+        p ← partition(A)  // assume this function does pivot selection, p is the final position of the pivot
+        introsort(A[0:p], maxdepth - 1)
+        introsort(A[p+1:n], maxdepth - 1)
+
+"""
+#introsort
+def sort(A):
+    maxdepth = int(log(len(A)))*2
+    introsort(A, maxdepth)
+
+def introsort(A,maxdepth):
+    n = len(A)
+    if n<= 1:
+        return
+    elif maxdepth == 0:
+        heapsort(A,N)
+    else:
+        p = partition(A)
+        introsort(A[0:p], maxdepth-1)
+        introsort(A[p+1:n], maxdepth-1)
+
 #heapsort
 def iParent(i):
     return int((i-1)/2)
