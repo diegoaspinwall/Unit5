@@ -8,28 +8,6 @@ from math import log
 
 N = 100 #how many numbers will be sorted
 
-'''
-def mySort(A):
-    swapped = True
-    while swapped:
-        swapped = False
-        for i in range(0,len(A)-1):
-            if A[i]>A[i+1]:
-                A[i], A[i+1] = A[i+1], A[i]#how you swap
-                swapped = True
-        if not swapped:
-            break
-        swapped = False
-        for i in range(len(A)-2,-1,-1):
-            if A[i]>A[i+1]:
-                A[i], A[i+1] = A[i+1], A[i]
-                swapped = True
-    return A
-'''
-'''
-
-'''
-
 #heapsort
 def iParent(i):
     return int((i-1)/2)
@@ -67,9 +45,6 @@ def siftDown(a, start, end):
         else:
             a[root], a[swap] = a[swap], a[root]
             root = swap
-
-
-
 
 if __name__ == '__main__':
     
