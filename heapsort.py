@@ -84,7 +84,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    numbers = heapsort(numbers, N)
+    numbers = sort(numbers)
     t2 = time()
        
     #print whether the sort worked or not
