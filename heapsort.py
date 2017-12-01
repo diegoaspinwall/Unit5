@@ -23,9 +23,19 @@ def introsort(A,maxdepth):
         p = partition(A, min(A), max(A))
         introsort(A[0:p], maxdepth-1)
         introsort(A[p+1:n], maxdepth-1)
-
+'''
+algorithm partition(A, lo, hi) is
+    pivot := A[hi]
+    i := lo - 1    
+    for j := lo to hi - 1 do
+        if A[j] < pivot then
+            i := i + 1
+            swap A[i] with A[j]
+    if A[hi] < A[i + 1] then
+        swap A[i + 1] with A[hi]
+    return i + 1
+'''
 def partition(A, lo, hi):
-    print(hi)
     pivot = A[hi]
     i = lo-1
     for j in range(lo, hi-1):
@@ -85,7 +95,8 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    numbers = sort(numbers)
+    #numbers = sort(numbers)
+    numbers = heapsort(numbers, N)
     t2 = time()
        
     #print whether the sort worked or not
