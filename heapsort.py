@@ -25,6 +25,7 @@ def introsort(A,maxdepth):
         introsort(A[p+1:n], maxdepth-1)
 
 def partition(A, lo, hi):
+    print(hi)
     pivot = A[hi]
     i = lo-1
     for j in range(lo, hi-1):
