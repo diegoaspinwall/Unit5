@@ -20,7 +20,11 @@ def wordLengths(bist):
     return outlist
 
 def biggest(cist):
-    
+    big = cist[0]
+    for num in cist:
+        if big < num:
+            big = num
+    return big
 
 
 print(rand5())
