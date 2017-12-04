@@ -14,7 +14,9 @@ def lastElement(aist):
     return aist[-1]
 
 def wordLengths(bist):
-    return bist[0]
+    outlist = []
+    for word in bist:
+        outlist.append(len(word))
 
 print(rand5())
 print(lastElement(['cat','dog','rat']))
