@@ -8,7 +8,7 @@ from math import log
 
 N = 100 #how many numbers will be sorted
 
-#introsort
+#introsort - start looking at my program by heapsort below
 def sort(A):
     maxdepth = int(log(len(A)))*2
     introsort(A, maxdepth)
