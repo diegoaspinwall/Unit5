@@ -8,3 +8,6 @@ def rand5():
     nums = []
     for i in range(0,5):
         nums.append(randint(1,100))
+    return nums
+
+print(rand5)
