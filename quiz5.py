@@ -19,6 +19,11 @@ def wordLengths(bist):
         outlist.append(len(word))
     return outlist
 
+def biggest(cist):
+    
+
+
 print(rand5())
 print(lastElement(['cat','dog','rat']))
 print(wordLengths(['the','cat','is','hungry']))
+print(biggest([3,-1,5,-2,7,2,1]))
