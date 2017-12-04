@@ -13,5 +13,8 @@ def rand5():
 def lastElement(list):
     return list[-1]
 
+def wordLengths():
+    
+
 print(rand5())
 print(lastElement(['cat','dog','rat']))
