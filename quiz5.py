@@ -10,4 +10,7 @@ def rand5():
         nums.append(randint(1,100))
     return nums
 
+def lastElement(list):
+    return list[-1]
+
 print(rand5())
