@@ -10,4 +10,4 @@ def rand5():
         nums.append(randint(1,100))
     return nums
 
-print(rand5)
+print(rand5())
