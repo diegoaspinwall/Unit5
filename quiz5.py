@@ -21,3 +21,4 @@ def wordLengths(bist):
 
 print(rand5())
 print(lastElement(['cat','dog','rat']))
+print(wordLengths(['the','cat','is','hungry']))
