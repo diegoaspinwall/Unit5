@@ -14,3 +14,4 @@ def lastElement(list):
     return list[-1]
 
 print(rand5())
+print(lastElement(['cat','dog','rat']))
