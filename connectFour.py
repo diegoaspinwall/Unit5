@@ -5,12 +5,14 @@
 from ggame import *
 
 def placePiece(event):
-    Sprite(redfill, (50,50))
+    Sprite(redfill, (event.x,event.y))
 
 def printBoard():
+    '''
     for row in range(0,6):
         for col in range(0,7):
             Sprite(hole, (90*col+50, 90*row+50))
+    '''
 
 if __name__ == '__main__':
     
