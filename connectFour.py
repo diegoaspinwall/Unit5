@@ -6,6 +6,7 @@ from ggame import *
 
 def placePiece(event):
     #Sprite(redfill, (event.x,event.y))
+    print(((event.x)**2+(event.y)**2)**.5)
     if ((event.x)**2+(event.y)**2)**.5 == 200:
         print('Inside')
     else:
