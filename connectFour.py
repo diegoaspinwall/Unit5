@@ -26,7 +26,7 @@ if __name__ == '__main__':
     
     CIRCX = 300
     CIRCY = 200
-    CIRCR = 100
+    CIRCR = 200
     
     white = Color(0xffffff,1)
     red = Color(0xff0000,1)
