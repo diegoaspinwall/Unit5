@@ -8,6 +8,7 @@ def placePiece(event):
     Sprite(redfill, (event.x,event.y))
 
 def printBoard():
+    Sprite(testhole)
     '''
     for row in range(0,6):
         for col in range(0,7):
@@ -25,6 +26,7 @@ if __name__ == '__main__':
     hole = CircleAsset(40,blackOutline,white)
     redfill = CircleAsset(40,blackOutline,red)
     bluefill = CircleAsset(40,blackOutline,blue)
+    testhole = CircleAsset(80,blackOutline,white)
     
     printBoard()
     
