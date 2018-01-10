@@ -23,6 +23,10 @@ def printBoard():
 
 if __name__ == '__main__':
     
+    CIRCX = 0
+    CIRCY = 0
+    CIRCR = 200
+    
     white = Color(0xffffff,1)
     red = Color(0xff0000,1)
     blue = Color(0x0000ff,1)
@@ -32,7 +36,7 @@ if __name__ == '__main__':
     hole = CircleAsset(40,blackOutline,white)
     redfill = CircleAsset(40,blackOutline,red)
     bluefill = CircleAsset(40,blackOutline,blue)
-    testhole = CircleAsset(200,blackOutline,white)
+    testhole = CircleAsset(CIRCR,blackOutline,white)
     
     printBoard()
     
