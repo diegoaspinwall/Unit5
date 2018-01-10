@@ -6,7 +6,7 @@ from ggame import *
 
 def placePiece(event):
     #Sprite(redfill, (event.x,event.y))
-    print(((event.x)**2+(event.y)**2)**.5)
+    print(((event.x-CIRCX)**2+(event.y-CIRCX)**2)**.5)
     if ((event.x)**2+(event.y)**2)**.5 <= CIRCR:
         print('Inside')
     else:
@@ -14,7 +14,7 @@ def placePiece(event):
         Sprite(LineAsset(event.x,event.y,blackOutline))
 
 def printBoard():
-    Sprite(testhole)
+    Sprite(testhole, (CIRCX,CIRCY))
     '''
     for row in range(0,6):
         for col in range(0,7):
