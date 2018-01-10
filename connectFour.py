@@ -26,7 +26,7 @@ if __name__ == '__main__':
     hole = CircleAsset(40,blackOutline,white)
     redfill = CircleAsset(40,blackOutline,red)
     bluefill = CircleAsset(40,blackOutline,blue)
-    testhole = CircleAsset(80,blackOutline,white)
+    testhole = CircleAsset(200,blackOutline,white)
     
     printBoard()
     
