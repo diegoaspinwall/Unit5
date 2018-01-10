@@ -11,6 +11,7 @@ def placePiece(event):
         print('Inside')
     else:
         print('Outside')
+        Sprite(LineAsset(event.x,event.y,blackOutline))
 
 def printBoard():
     Sprite(testhole)
