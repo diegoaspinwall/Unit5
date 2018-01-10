@@ -6,7 +6,7 @@ from ggame import *
 
 def placePiece(event):
     #Sprite(redfill, (event.x,event.y))
-    print(((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5)
+    print('R =',((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5)
     if ((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5 <= CIRCR:
         print('Inside')
     else:
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     
     CIRCX = 300
     CIRCY = 200
-    CIRCR = 200
+    CIRCR = 100
     
     white = Color(0xffffff,1)
     red = Color(0xff0000,1)
