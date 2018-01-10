@@ -11,7 +11,7 @@ def placePiece(event):
         print('Inside')
     else:
         print('Outside')
-        Sprite(LineAsset(event.x,event.y,blackOutline))
+        Sprite(LineAsset(event.x-CIRCX,event.y-CIRCY,blackOutline))
 
 def printBoard():
     Sprite(testhole, (CIRCX,CIRCY))
@@ -24,7 +24,7 @@ def printBoard():
 if __name__ == '__main__':
     
     CIRCX = 300
-    CIRCY = 0
+    CIRCY = 200
     CIRCR = 200
     
     white = Color(0xffffff,1)
