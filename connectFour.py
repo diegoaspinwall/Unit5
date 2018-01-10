@@ -5,7 +5,11 @@
 from ggame import *
 
 def placePiece(event):
-    Sprite(redfill, (event.x,event.y))
+    #Sprite(redfill, (event.x,event.y))
+    if ((event.x)**2+(event.y)**2)**.5 == 200:
+        print('Inside')
+    else:
+        print('Outside')
 
 def printBoard():
     Sprite(testhole)
