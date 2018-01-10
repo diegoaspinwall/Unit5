@@ -7,6 +7,7 @@ from ggame import *
 def placePiece(event):
     #Sprite(redfill, (event.x,event.y))
     print('R =',((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5)
+    print(event.x,event.y)
     if ((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5 <= CIRCR:
         print('Inside')
     else:
